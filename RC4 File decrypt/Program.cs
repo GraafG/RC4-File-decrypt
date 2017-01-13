@@ -14,6 +14,11 @@ namespace RC4_File_decrypt
     {
         static void Main(string[] args)
         {
+            if(args.Length != 3)
+            {
+                Console.WriteLine("Not all arguments are met use: key file-in file-out");
+                Environment.Exit(0);
+            }
 
             // To decrypt some files in RC4
 
